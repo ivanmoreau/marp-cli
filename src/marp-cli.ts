@@ -328,7 +328,7 @@ export const marpCli = async (
     }
 
     // Watch mode / Server mode
-    if (cvtOpts.watch) {
+    if (false) {
       return await new Promise<number>((res, rej) =>
         (async () => {
           watcherInstance = watcher(
