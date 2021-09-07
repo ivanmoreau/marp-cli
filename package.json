@@ -52,7 +52,7 @@
     "format:write": "yarn -s format --write",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --cache .",
     "lint:css": "stylelint \"src/**/*.{css,scss}\"",
-    "prepack": "npm-run-all --parallel check:* lint:* test:coverage --parallel build types",
+    "prepack": "npx npm-run-all --parallel check:* lint:* test:coverage --parallel build types",
     "preversion": "run-p check:* lint:* test:coverage",
     "standalone": "rimraf bin && pkg --out-path ./bin .",
     "standalone:pack": "node ./scripts/pack.js",
